@@ -1,0 +1,16 @@
+{
+  "name": "@apparatus/effects-sync-persistent-state",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.native.ts",
+  "repository": "apparatus-studio/effects",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.10.0"
+  },
+  "sideEffects": false
+}
