@@ -1,0 +1,83 @@
+{
+  "private": true,
+  "description": "Apparatus Effects",
+  "workspaces": [
+    "packages/@apparatus/effects/*"
+  ],
+  "devDependencies": {
+    "@bubble-dev/eslint-config": "^1.1.0",
+    "@bubble-dev/start-preset": "^4.0.0",
+    "@bubble-dev/typescript-config": "^1.0.1",
+    "eslint": "^6.1.0",
+    "react-native": "0.62.2",
+    "typescript": "^3.8.3"
+  },
+  "start": {
+    "file": "tasks/",
+    "auto": {
+      "shouldMakeGitTags": true,
+      "shouldWriteChangelogFiles": true
+    }
+  },
+  "auto": {
+    "bump": {
+      "initialType": "minor",
+      "zeroBreakingChangeType": "minor"
+    },
+    "npm": {
+      "publishSubDirectory": "build",
+      "access": "public"
+    },
+    "prefixes": {
+      "major": "💥",
+      "minor": "🌱",
+      "patch": "🐞",
+      "publish": "📦",
+      "initial": "🐣",
+      "cleanup": "🧹",
+      "lint": "🚷",
+      "test": "👾",
+      "docs": "📝",
+      "refactor": "🛠",
+      "wip": "🚧",
+      "screenshots": "📸",
+      "dependencies": "♻️"
+    },
+    "commit": {
+      "major": "Breaking Change",
+      "minor": "New feature",
+      "patch": "Bugfix",
+      "initial": "Initial",
+      "cleanup": "Cleanup",
+      "lint": "Lint",
+      "test": "Test",
+      "docs": "Docs",
+      "refactor": "Refactor",
+      "wip": "Work in progress",
+      "screenshots": "Snapshots / Screenshots",
+      "dependencies": "Dependencies"
+    }
+  },
+  "eslintConfig": {
+    "extends": "@bubble-dev/eslint-config"
+  },
+  "eslintIgnore": [
+    "build/",
+    "coverage/",
+    "node_modules/"
+  ],
+  "renovate": {
+    "commitMessagePrefix": "♻️",
+    "commitMessageAction": "update",
+    "commitMessageTopic": "{{depName}}",
+    "ignoreDeps": [
+      "gradle",
+      "react",
+      "react-dom",
+      "react-test-renderer"
+    ]
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  }
+}
