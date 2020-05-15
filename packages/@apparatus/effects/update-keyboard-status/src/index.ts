@@ -1,1 +1,3 @@
-export const updateKeyboardStatus = () => {}
+import { TUpdateKeyboardStatus } from './types'
+
+export const updateKeyboardStatus: TUpdateKeyboardStatus = () => {}

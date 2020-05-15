@@ -1,6 +1,7 @@
 import { Keyboard } from 'react-native'
+import { TUpdateKeyboardStatus } from './types'
 
-export const updateKeyboardStatus = (callback: (open: boolean, width: number, height: number) => void) => {
+export const updateKeyboardStatus: TUpdateKeyboardStatus = (callback: (open: boolean, width: number, height: number) => void) => {
   callback(
     false,
     0,
