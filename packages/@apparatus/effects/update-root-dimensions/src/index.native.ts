@@ -2,8 +2,8 @@ import { Dimensions } from 'react-native'
 
 export const updateRootDimensions = (callback: (width: number, height: number) => void) => {
   callback(
-    Dimensions.get('screen').width,
-    Dimensions.get('screen').height
+    Dimensions.get('window').width,
+    Dimensions.get('window').height
   )
 
   Dimensions.addEventListener('change', ({ window }) => {
