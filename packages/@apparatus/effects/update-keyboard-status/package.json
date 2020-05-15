@@ -1,0 +1,17 @@
+{
+  "name": "@apparatus/effects-update-keyboard-status",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.native.ts",
+  "repository": "apparatus-studio/effects",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@types/react-native": "^0.62.9",
+    "react-native": "^0.62.2"
+  },
+  "sideEffects": false
+}
