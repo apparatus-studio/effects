@@ -1,1 +1,1 @@
-export * from '@bubble-dev/start-preset'
+export * from '@apparatus/meta-start-preset'
