@@ -1,0 +1,17 @@
+{
+  "name": "@apparatus/effects-time-information-events",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.ts",
+  "repository": "apparatus-studio/effects",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "@apparatus/effects-get-current-time-in-seconds": "^0.1.0",
+    "date-fns": "^2.12.0"
+  }
+}
