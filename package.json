@@ -9,7 +9,7 @@
     "@nextools/eslint-config": "^0.1.2",
     "@nextools/typescript-config": "^0.1.0",
     "eslint": "^6.1.0",
-    "react-native": "0.62.2",
+    "react-native": "0.62.3",
     "typescript": "^3.8.3"
   },
   "start": {
